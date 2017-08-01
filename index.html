@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="theme-color" content="#fff">
+	
 	<title>SSG Brake-Enger</title>
-	<meta charset="utf-8">
-
+	
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:500,700,900" rel="stylesheet">
-
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/icon.css">
-
-	<script language="javascript" type="text/javascript" src="js/function.js"></script>
 	
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/icon.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/function.js"></script>
+	
 </head>
 <body>
 
@@ -23,13 +26,19 @@
 		<div id="logo">
 			<span class="icon-logo_ssg"></span>
 		</div>
-
-		<nav class="topnav" id="myTopnav">
-			<a href="#home">Aktuell</a>
-			<a href="#training">Training</a>
-			<a href="#events">Termine</a>
-			<a href="#contact">Kontakt</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+		
+		<div id="icon">
+			<span class="icon-menu"></span>
+			<span class="icon-cancel"></span>
+		</div>
+			
+		<nav>	
+			<ul class="firstlvl">
+				<a href="#home"><li>Aktuell</li></a>
+				<a href="#training"><li>Training</li></a>
+				<a href="#events"><li>Termine</li></a>
+				<a href="#contact"><li>Kontakt</li></a>
+			</ul>
 		</nav>
 	</header>
 		
