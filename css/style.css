@@ -15,7 +15,8 @@ License: GNU General Public License v2 or later
 html,
 body {margin: 0; padding: 0; height: 100%;}
 section {width: 100%; min-height: 100%;}
-h3 {margin: 0 0 0 20px; padding: 0;}
+h3 {margin: 0 0 20px 10px; padding: 0;}
+h4 {margin: 0 0 10px 0; padding: 0;}
 
 
 /* TRANSITION *******************************************************/
@@ -27,9 +28,10 @@ header nav li,
   
   
 /* FONT FAMILY *******************************************************/  
+section ,
 h3,
-footer,
-footer #meta-menu a{font-family: 'Lato', sans-serif}
+h4,
+footer{font-family: 'Lato', sans-serif}
 
 #icon span,
 header nav a {font-family: 'Roboto:700', sans-serif;}
@@ -41,6 +43,8 @@ h3 {font-size: 1.75em;} /* 28px/16px */
 
 header nav a {font-size: 1em;} /* 16px/16px = 1em */
 
+.flexcontainer div {font-size: 1em;} /* 12px/16px */
+	
 footer .copyright {font-size: 0.75em;} /* 12px/16px */
 
 
@@ -50,14 +54,14 @@ footer .copyright {font-size: 0.75em;} /* 12px/16px */
 #icon,
 header nav a {color: #595959;}
 
-#icon:hover,
 header nav a:hover {color: #fff;}
 
 footer #meta-menu a:hover,
 #logo span:hover {color: #4472c4;}
 
 #home h3,
-#events h3 {color: #fff;}
+#events h3,
+.flexcontainer div {color: #fff;}
 
 #training h3,
 #contact h3 {color: #4472c4;}
@@ -70,7 +74,10 @@ footer #meta-menu a {color: #999;}
 /* FONT STYLE *******************************************************/
 p {margin: 0; padding: 0;}
 a {text-decoration: none;}
-header nav ul li {list-style-type: none;}
+
+
+header nav ul li,
+.flexcontainer div ul li {list-style-type: none;}
 
 header nav a {font-weight: bold; letter-spacing: 2px;}
 
@@ -82,11 +89,11 @@ body {background: #fff;}
 header {background: #fff;}
 header nav li  {background: #fff;}
 
-#icon:hover,
 header nav li:hover {background: #4472c4;}
 
 #home , 
-#events {background: #4472c4;}
+#events,
+.flexcontainer div {background: #4472c4;}
 
 #training, 
 #contact {background: #fff;}
@@ -121,11 +128,31 @@ header nav ul li {float:left; width: 150px; height: 20px; padding: 25px 0 25px 0
 
 
 /* SECTIONS *********************************************************/
-#home {}
-#training{}
-#events{}
-#contact{}
-.container-content {max-width: 760px; margin: 0 auto 0 auto; padding: 125px 0 0 0;}
+#home,
+#training,
+#events,
+#contact{align: center;}
+.container-content {max-width: 768px; width: 100%; margin: 0 auto; padding: 125px 0 0 0;}/* background-color: #ddd}*/
+
+/* CONTACT */
+.flexcontainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+
+.flexcontainer div {
+	flex: 1;
+	border: 0px solid #000;
+	width: 246px;
+	margin: 10px;
+	padding: 15px;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.flexcontainer div hr {border:0; height: 1px; background: rgba(255, 255, 255, 0.5);}
 
 
 
